@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYT Search</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	
+
+	
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script> 
+     <script type="text/javascript" src="javascript/newyork.js"></script> 
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron text-center pageTitle">
+			<h1><i class="fa fa-newspaper-o" aria-hidden="true"></i>New York Times Search</h1>
+		</div>
+
+		<div class="panel-heading">
+			<h3 class="panel-title">Search Parameters</h3>
+			<div class="panel-body">
+
+			<form>
+				<!-- search inputs below -->
+			    <div><label for="search-input"><i class="fa fa-search" aria-hidden="true"></i> Search Term:</label></div>
+      			<div><input type="text" id="search-input"></div>
+
+      			<div><label for="records-input"><i class="fa fa-list-ol" aria-hidden="true"></i> Number of Records to retrieve:</label></div>
+      			<div><input type="text" id="records-input"></div>
+
+      			<div><label for="startYear-input"><i class="fa fa-play" aria-hidden="true"></i> Start Year (Optional):</label></div>
+      			<div><input type="text" id="startYear-input"></div>
+
+      			<div><label for="endYear-input"><i class="fa fa-stop" aria-hidden="true"></i> End Year (Optional):</label></div>
+      			<div><input type="text" id="endYear-input"></div>
+
+      			<!-- buttons in search form -->
+				<input id="form-submit" type="submit" value="Submit">
+				<input id="form-clear" type="submit" value="Clear Results">
+				
+			</form>
+			</div>		
+		</div>
+
+		<div class="panel-heading">
+			<h3 class="panel-title">Search Results</h3>
+			<div class="panel-body" id="searchResults">
+				<!-- search results will be shown here -->
+			</div>
+		</div>
+		
+</div>
+
+</body>
+</html>
